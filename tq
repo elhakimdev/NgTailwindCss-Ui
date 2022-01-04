@@ -1,0 +1,23 @@
+[33mcommit c3e31ff433ad65b5856ef3cedc6ef4a98a290654[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop/ui[m[33m)[m
+Author: ElhkaimDev <abdulelhakim68@gmial.com>
+Date:   Wed Jan 5 03:11:10 2022 +0700
+
+    basic functionality of accordion function
+
+[33mcommit 58c1869d883d86f606abc8a9e284adc5b15e6297[m
+Author: ElhkaimDev <abdulelhakim68@gmial.com>
+Date:   Wed Jan 5 00:02:07 2022 +0700
+
+    base accordion layout
+
+[33mcommit d1296225342c08998dea78049a7cda37d7180e74[m[33m ([m[1;32mmaster[m[33m)[m
+Author: ElhkaimDev <abdulelhakim68@gmial.com>
+Date:   Tue Jan 4 23:18:28 2022 +0700
+
+    initial setup tailwind css postcss configuration
+
+[33mcommit 9bf6a7e2f1ca40fa12109a556fab149ee5b857d3[m
+Author: ElhkaimDev <abdulelhakim68@gmial.com>
+Date:   Tue Jan 4 22:58:51 2022 +0700
+
+    initial commit
