@@ -1,0 +1,6 @@
+.accordion__list__wrapper {
+    @apply flex flex-col border-b;
+}
+.accordion__list__header {
+    @apply flex flex-row items-center justify-between w-full cursor-pointer p-4 hover:bg-gray-300/20;
+}
