@@ -20,9 +20,8 @@ export class AccordionListComponent implements OnInit {
   toogleShowContent(event: Event){
     this.isExpanded = !this.isExpanded;
     
-    let currentElement = (event.target as Element)
+    let currentActiveElement = (event.target as Element)
 
-    currentElement.parentElement?.setAttribute('aria-expanded', 'true');
+    currentActiveElement.parentElement?.setAttribute('aria-expanded', 'true');
   }
-
 }
