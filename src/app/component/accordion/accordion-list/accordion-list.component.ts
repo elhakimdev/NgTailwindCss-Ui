@@ -17,6 +17,11 @@ export class AccordionListComponent implements OnInit {
     this.hideInitialContent();
   }
 
+  /**
+   * Toogle bewtween show and hide
+   * 
+   * @param event Event
+   */
   toogleShowContent(event: Event){
     this.isExpanded = !this.isExpanded;
     
@@ -24,10 +29,14 @@ export class AccordionListComponent implements OnInit {
 
     currentActiveElement.parentElement?.setAttribute('aria-expanded', 'true');
 
-    // but we must check if autocollapsible feature is on we must handle it also ;
+    const currentActiveIcon = (currentActiveElement.parentNode?.childNodes[0] as Element);
 
+    this.rotateExpandedIcon(currentActiveIcon);
   }
 
+  /**
+   * Hide initializer
+   */
   hideInitialContent(){
     let nodes = self.document.querySelectorAll('div#accordion-list');
 
@@ -44,5 +53,14 @@ export class AccordionListComponent implements OnInit {
         node.setAttribute('aria-expanded', 'false');
       });
     }
+  }
+
+  /**
+   * Rotate given specific element
+   * 
+   * @param el Element
+   */
+  rotateExpandedIcon(el: Element): void{
+    this.isExpanded ? el.children[1].classList.add('rotate-180') : el.children[1].classList.remove('rotate-180');
   }
 }

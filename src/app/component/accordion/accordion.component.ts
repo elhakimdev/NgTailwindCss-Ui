@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class AccordionComponent implements OnInit {
 
   @Input() autocollapsible: boolean = false;
-
+  
   constructor() { }
 
   ngOnInit(): void {
